@@ -1,15 +1,16 @@
 #include "Database.h"
 
 void Database::Add(const char* n, int val)
+//adds another entry
 {
 	Data[current] = Entry(n, val);
 	current++;
 }
 
-void Database::Save(char * filename)
+void Database::Save(char * filename,Database& l)
+//saves the database to a .txt file and wipes the Database
 {
 	std::ofstream out(filename,std::ios::app);
-	
 
 	for (int i = 0; i < current; i++)
 	{
@@ -27,7 +28,9 @@ void Database::Save(char * filename)
 			out.put(instr[g]);
 		}
 		out.put('\n');
+		l.Add(Data[i].GetName(), Data[i].GetValue());
 	}
+	this->current = 0;
 }
 
 void Database::Load(char * filename)

@@ -26,8 +26,8 @@ private:
 	int current = 0;
 public:
 	Database() = default;
-	void Add(const char* name,int val);
-	void Save(char* filename);
-	void Load(char* filename);
-	void Print();
+	void Add(const char* name,int val);			//adds another Entry to the database
+	void Save(char* filename,Database& l);		//saves the data base to a specicfic .txt file and wipes the data base 
+	void Load(char* filename);					//load the enrties from a .txt file
+	void Print();								//prints the Database
 };

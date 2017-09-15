@@ -2,11 +2,13 @@
 #include"Database.h"
 
 using namespace alloncm;
-int main()
+
+void usingDb()
 {
 	char c = 0;
-	Database data;
-	while (c!='e')
+	Database newData;
+	Database loadData;
+	while (c != 'e')
 	{
 		print("(l)oad (s)ave (a)dd (p)rint or (e)xit?\n");
 		char a = getchar();
@@ -15,11 +17,11 @@ int main()
 		switch (a)
 		{
 		case 'l':
-			data.Load("derp.txt");
+			loadData.Load("derp.txt");
 			print("load complete\n");
 			break;
 		case 's':
-			data.Save("derp.txt");
+			newData.Save("derp.txt", loadData);
 			print("save complete\n");
 			break;
 		case 'a':
@@ -30,19 +32,20 @@ int main()
 			print("enter a number\n");
 			GetStr(instr, 10);
 			b = str2int(instr);
-			data.Add(buf, b);
+			newData.Add(buf, b);
 			break;
 		case 'p':
-			data.Print();
+			loadData.Print();
+			newData.Print();
 			break;
 		case 'e':
 			c = a;
 			break;
-		}	
+		}
 	}
-	//char buf[10];
-	//int2str(2, buf);
-	char str[] = "tree";
-	ReverseStr(str);
+}
+int main()
+{
+	
 	return 0;
 }
