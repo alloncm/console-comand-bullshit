@@ -1,5 +1,4 @@
 ﻿  main.cpp
-  Database.cpp
-  Generating Code...
-  Exercises.vcxproj -> C:\Users\Alon\Documents\Visual Studio 2015\Projects\consoleComandShit\Debug\Exercises.exe
-  Exercises.vcxproj -> C:\Users\Alon\Documents\Visual Studio 2015\Projects\consoleComandShit\Debug\Exercises.pdb (Full PDB)
+d:\מסמכים\visual studio 2013\projects\console bullshot\exercises\main.cpp(93): warning C4018: '<': signed/unsigned mismatch
+  Exercises.vcxproj -> D:\מסמכים\Visual Studio 2013\Projects\console bullshot\Debug\Exercises.exe
+  Exercises.vcxproj -> D:\מסמכים\Visual Studio 2013\Projects\console bullshot\Debug\Exercises.pdb (Full PDB)

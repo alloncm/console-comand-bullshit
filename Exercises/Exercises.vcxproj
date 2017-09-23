@@ -86,6 +86,10 @@
     <ClInclude Include="Database.h" />
     <ClInclude Include="stdioAlloncm.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\downloads\מדעי המחשב\20k.txt" />
+    <Text Include="sgb-words.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
