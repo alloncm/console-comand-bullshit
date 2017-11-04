@@ -1,4 +1,5 @@
 
+/*
 #include"Database.h"
 #include<fstream>
 #include<random>
@@ -177,3 +178,4 @@ int main()
 	std::cin.get();
 	return 0;
 }
+*/
